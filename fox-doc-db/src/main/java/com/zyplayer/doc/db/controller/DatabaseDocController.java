@@ -23,6 +23,7 @@ import com.zyplayer.doc.db.framework.utils.PoiUtil;
 import com.zyplayer.doc.db.service.database.DatabaseServiceFactory;
 import com.zyplayer.doc.db.service.database.DbBaseService;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -41,6 +42,7 @@ import java.util.stream.Stream;
  */
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-db/doc-db")
 public class DatabaseDocController {
 

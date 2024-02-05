@@ -40,7 +40,7 @@
                     <a target="_blank" href="https://gitee.com/zyplayer/zyplayer-doc">zyplayer-doc</a>
                 </el-form-item>
                 <el-form-item label="开发人员：">
-                    <a target="_blank" href="http://zyplayer.com">离狐千慕</a>
+                    <a target="_blank" href="http://127.0.0.1:8083">离狐千慕</a>
                 </el-form-item>
                 <template v-if="upgradeInfo.lastVersion">
                     <el-form-item label="当前版本：">{{upgradeInfo.nowVersion}}</el-form-item>

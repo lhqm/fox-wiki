@@ -11,10 +11,7 @@ import com.zyplayer.doc.data.repository.manage.entity.ApiRequestParam;
 import com.zyplayer.doc.data.service.manage.ApiRequestParamService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -28,6 +25,7 @@ import java.util.List;
  */
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/doc-api/request-param")
 public class ApiRequestParamController {
 	private static final Logger logger = LoggerFactory.getLogger(ApiRequestParamController.class);

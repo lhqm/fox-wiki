@@ -10,7 +10,7 @@ zyplayer-doc/zyplayer-doc-ui/console-ui
 
 在文件 C:\Windows\System32\drivers\etc\hosts 末尾增加：
 
-127.0.0.1 local.zyplayer.com
+127.0.0.1 127.0.0.1
 
 ## 配置文件
 

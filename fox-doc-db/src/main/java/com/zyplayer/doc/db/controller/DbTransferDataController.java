@@ -9,6 +9,7 @@ import com.zyplayer.doc.data.service.manage.DbTransferTaskService;
 import com.zyplayer.doc.db.framework.db.transfer.SqlParseUtil;
 import com.zyplayer.doc.db.framework.db.transfer.TransferDataServer;
 import com.zyplayer.doc.db.framework.json.DocDbResponseJson;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,6 +26,7 @@ import java.util.List;
  */
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-db/transfer")
 public class DbTransferDataController {
 

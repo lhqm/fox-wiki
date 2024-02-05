@@ -5,4 +5,4 @@
 
 模块的详细使用文档地址，部署必看：
 
-http://zyplayer.com/doc-wiki#/docs/w4eSzPWvQRSBvaCHZS8t6d
+http://127.0.0.1:8083/doc-wiki#/docs/w4eSzPWvQRSBvaCHZS8t6d

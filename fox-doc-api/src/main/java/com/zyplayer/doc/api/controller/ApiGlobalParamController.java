@@ -13,10 +13,7 @@ import com.zyplayer.doc.data.service.manage.ApiGlobalParamService;
 import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -32,6 +29,7 @@ import java.util.Optional;
  */
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/doc-api/global-param")
 public class ApiGlobalParamController {
 	private static final Logger logger = LoggerFactory.getLogger(ApiGlobalParamController.class);

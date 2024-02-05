@@ -14,6 +14,7 @@ import com.zyplayer.doc.data.repository.support.consts.DocAuthConst;
 import com.zyplayer.doc.data.service.manage.UserGroupRelationService;
 import com.zyplayer.doc.data.service.manage.UserGroupService;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,6 +30,7 @@ import java.util.List;
  * @since 2021-02-09
  */
 @RestController
+@CrossOrigin
 @RequestMapping("/user/group")
 public class UserGroupController {
 	

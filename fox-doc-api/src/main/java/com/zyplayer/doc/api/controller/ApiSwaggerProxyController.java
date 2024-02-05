@@ -1,26 +1,32 @@
 package com.zyplayer.doc.api.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.zyplayer.doc.api.controller.vo.SwaggerResourceVo;
+import com.zyplayer.doc.api.framework.utils.SwaggerDocUtil;
+import com.zyplayer.doc.api.service.SwaggerHttpRequestService;
 import com.zyplayer.doc.core.annotation.AuthMan;
 import com.zyplayer.doc.core.exception.ConfirmException;
 import com.zyplayer.doc.core.json.DocResponseJson;
 import com.zyplayer.doc.data.repository.manage.entity.ApiDoc;
 import com.zyplayer.doc.data.service.manage.ApiDocService;
-import com.zyplayer.doc.api.controller.vo.SwaggerResourceVo;
-import com.zyplayer.doc.api.framework.utils.SwaggerDocUtil;
-import com.zyplayer.doc.api.service.SwaggerHttpRequestService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MimeTypeUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.spring.web.json.Json;
-import springfox.documentation.swagger.web.*;
+import springfox.documentation.swagger.web.SecurityConfiguration;
+import springfox.documentation.swagger.web.SecurityConfigurationBuilder;
+import springfox.documentation.swagger.web.UiConfiguration;
+import springfox.documentation.swagger.web.UiConfigurationBuilder;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * 承接了所有的ApiResourceController的接口
@@ -30,6 +36,7 @@ import java.util.*;
  */
 @AuthMan
 @RestController
+@CrossOrigin
 public class ApiSwaggerProxyController {
 	
 	private static final String HAL_MEDIA_TYPE = "application/hal+json";

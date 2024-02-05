@@ -20,6 +20,7 @@ import com.zyplayer.doc.wiki.controller.vo.WikiPageCommentVo;
 import com.zyplayer.doc.wiki.framework.consts.SpaceType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -38,6 +39,7 @@ import java.util.Objects;
 @Slf4j
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-wiki/page/comment")
 @RequiredArgsConstructor
 public class WikiPageCommentController {

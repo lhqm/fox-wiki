@@ -8,41 +8,24 @@ import com.zyplayer.doc.core.json.ResponseJson;
 import com.zyplayer.doc.data.config.security.DocUserDetails;
 import com.zyplayer.doc.data.config.security.DocUserUtil;
 import com.zyplayer.doc.data.config.security.UserAuthInfo;
-import com.zyplayer.doc.data.repository.manage.entity.AuthInfo;
-import com.zyplayer.doc.data.repository.manage.entity.UserAuth;
-import com.zyplayer.doc.data.repository.manage.entity.UserInfo;
-import com.zyplayer.doc.data.repository.manage.entity.UserMessage;
-import com.zyplayer.doc.data.repository.manage.entity.WikiPage;
-import com.zyplayer.doc.data.repository.manage.entity.WikiPageZan;
-import com.zyplayer.doc.data.repository.manage.entity.WikiSpace;
+import com.zyplayer.doc.data.repository.manage.entity.*;
 import com.zyplayer.doc.data.repository.manage.mapper.UserGroupAuthMapper;
 import com.zyplayer.doc.data.repository.support.consts.DocSysModuleType;
 import com.zyplayer.doc.data.repository.support.consts.DocSysType;
 import com.zyplayer.doc.data.repository.support.consts.UserMsgType;
-import com.zyplayer.doc.data.service.manage.AuthInfoService;
-import com.zyplayer.doc.data.service.manage.UserAuthService;
-import com.zyplayer.doc.data.service.manage.UserInfoService;
-import com.zyplayer.doc.data.service.manage.UserMessageService;
-import com.zyplayer.doc.data.service.manage.WikiPageService;
-import com.zyplayer.doc.data.service.manage.WikiPageZanService;
-import com.zyplayer.doc.data.service.manage.WikiSpaceService;
+import com.zyplayer.doc.data.service.manage.*;
 import com.zyplayer.doc.wiki.controller.vo.UserPageAuthVo;
 import com.zyplayer.doc.wiki.framework.consts.WikiAuthType;
 import com.zyplayer.doc.wiki.service.common.WikiPageAuthService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collection;
-import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -55,6 +38,7 @@ import java.util.stream.Stream;
 @Slf4j
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-wiki/page/auth")
 @RequiredArgsConstructor
 public class WikiPageAuthController {

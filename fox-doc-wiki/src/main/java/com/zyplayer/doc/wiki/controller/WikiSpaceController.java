@@ -27,6 +27,7 @@ import com.zyplayer.doc.wiki.framework.consts.WikiAuthType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -43,6 +44,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-wiki/space")
 @RequiredArgsConstructor
 public class WikiSpaceController {

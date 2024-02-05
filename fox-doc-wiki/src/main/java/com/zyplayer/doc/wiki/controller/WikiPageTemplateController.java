@@ -8,13 +8,20 @@ import com.zyplayer.doc.core.json.DocResponseJson;
 import com.zyplayer.doc.core.json.ResponseJson;
 import com.zyplayer.doc.data.config.security.DocUserDetails;
 import com.zyplayer.doc.data.config.security.DocUserUtil;
-import com.zyplayer.doc.data.repository.manage.entity.*;
+import com.zyplayer.doc.data.repository.manage.entity.WikiPage;
+import com.zyplayer.doc.data.repository.manage.entity.WikiPageContent;
+import com.zyplayer.doc.data.repository.manage.entity.WikiPageFile;
+import com.zyplayer.doc.data.repository.manage.entity.WikiPageTemplate;
 import com.zyplayer.doc.data.repository.manage.vo.WikiPageTemplateInfoVo;
 import com.zyplayer.doc.data.repository.manage.vo.WikiTemplateTagVo;
-import com.zyplayer.doc.data.service.manage.*;
+import com.zyplayer.doc.data.service.manage.WikiPageContentService;
+import com.zyplayer.doc.data.service.manage.WikiPageFileService;
+import com.zyplayer.doc.data.service.manage.WikiPageService;
+import com.zyplayer.doc.data.service.manage.WikiPageTemplateService;
 import com.zyplayer.doc.wiki.service.WikiPageUploadService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,6 +40,7 @@ import java.util.*;
 @Slf4j
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-wiki/template")
 @RequiredArgsConstructor
 public class WikiPageTemplateController {

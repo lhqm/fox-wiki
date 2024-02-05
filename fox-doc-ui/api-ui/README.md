@@ -16,7 +16,7 @@ npm run prod
 ```
 
 ### 启动后访问
-http://local.zyplayer.com
+http://127.0.0.1
 
 ### 编译打包
 ```

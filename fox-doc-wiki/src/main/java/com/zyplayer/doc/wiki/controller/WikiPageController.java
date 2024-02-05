@@ -35,6 +35,7 @@ import org.docx4j.XmlUtils;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
 import org.docx4j.openpackaging.parts.WordprocessingML.AltChunkType;
 import org.docx4j.openpackaging.parts.WordprocessingML.MainDocumentPart;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -56,6 +57,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-wiki/page")
 @RequiredArgsConstructor
 public class WikiPageController {

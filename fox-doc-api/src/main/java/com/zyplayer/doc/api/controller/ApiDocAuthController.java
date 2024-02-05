@@ -6,7 +6,9 @@ import com.zyplayer.doc.core.json.DocResponseJson;
 import com.zyplayer.doc.core.json.ResponseJson;
 import com.zyplayer.doc.data.config.security.DocUserDetails;
 import com.zyplayer.doc.data.config.security.DocUserUtil;
-import com.zyplayer.doc.data.repository.manage.entity.*;
+import com.zyplayer.doc.data.repository.manage.entity.AuthInfo;
+import com.zyplayer.doc.data.repository.manage.entity.UserAuth;
+import com.zyplayer.doc.data.repository.manage.entity.UserInfo;
 import com.zyplayer.doc.data.repository.support.consts.ApiAuthType;
 import com.zyplayer.doc.data.repository.support.consts.DocSysModuleType;
 import com.zyplayer.doc.data.repository.support.consts.DocSysType;
@@ -18,6 +20,7 @@ import com.zyplayer.doc.data.service.manage.UserInfoService;
 import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,6 +37,7 @@ import java.util.stream.Collectors;
  */
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/doc-api/doc/auth")
 public class ApiDocAuthController {
 	private static final Logger logger = LoggerFactory.getLogger(ApiDocAuthController.class);

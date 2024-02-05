@@ -5,7 +5,7 @@ module.exports = {
 		hot: true,
 		disableHostCheck: true,
 		port: 80,
-		host: 'local.zyplayer.com'
+		host: '127.0.0.1'
 	},
 	publicPath: './',
 	outputDir: '../../zyplayer-doc-db/src/main/resources/dist',

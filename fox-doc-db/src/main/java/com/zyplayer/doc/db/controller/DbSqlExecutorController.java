@@ -20,7 +20,10 @@ import com.zyplayer.doc.data.repository.support.consts.DocSysType;
 import com.zyplayer.doc.data.service.manage.DbFavoriteService;
 import com.zyplayer.doc.data.service.manage.DbHistoryService;
 import com.zyplayer.doc.db.framework.consts.DbAuthType;
-import com.zyplayer.doc.db.framework.db.mapper.base.*;
+import com.zyplayer.doc.db.framework.db.mapper.base.ColumnExecuteResult;
+import com.zyplayer.doc.db.framework.db.mapper.base.ColumnSqlExecutor;
+import com.zyplayer.doc.db.framework.db.mapper.base.ExecuteParam;
+import com.zyplayer.doc.db.framework.db.mapper.base.ExecuteType;
 import com.zyplayer.doc.db.framework.db.transfer.SqlParseUtil;
 import com.zyplayer.doc.db.framework.json.DocDbResponseJson;
 import com.zyplayer.doc.db.framework.utils.SQLTransformUtils;
@@ -29,6 +32,7 @@ import com.zyplayer.doc.db.service.database.DbBaseService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -44,6 +48,7 @@ import java.util.*;
  */
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-db/executor")
 public class DbSqlExecutorController {
 	private static final Logger logger = LoggerFactory.getLogger(DbSqlExecutorController.class);

@@ -11,6 +11,7 @@ import com.zyplayer.doc.data.repository.manage.entity.UserAuth;
 import com.zyplayer.doc.data.repository.support.consts.DocAuthConst;
 import com.zyplayer.doc.data.service.manage.AuthInfoService;
 import com.zyplayer.doc.data.service.manage.UserAuthService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,6 +28,7 @@ import java.util.stream.Collectors;
  * @since 2023-12-08
  */
 @RestController
+@CrossOrigin
 @RequestMapping("/user/auth")
 @AuthMan(DocAuthConst.AUTH_ASSIGN)
 public class UserAuthController {

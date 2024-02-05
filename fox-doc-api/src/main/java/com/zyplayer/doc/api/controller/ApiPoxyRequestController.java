@@ -1,20 +1,17 @@
 package com.zyplayer.doc.api.controller;
 
-import com.zyplayer.doc.core.annotation.AuthMan;
-import com.zyplayer.doc.core.json.DocResponseJson;
-import com.zyplayer.doc.core.json.ResponseJson;
 import com.zyplayer.doc.api.controller.param.ProxyRequestParam;
 import com.zyplayer.doc.api.controller.vo.ProxyRequestResultVo;
 import com.zyplayer.doc.api.service.SwaggerHttpRequestService;
+import com.zyplayer.doc.core.annotation.AuthMan;
+import com.zyplayer.doc.core.json.DocResponseJson;
+import com.zyplayer.doc.core.json.ResponseJson;
 import com.zyplayer.doc.data.repository.manage.entity.ApiCustomNode;
 import com.zyplayer.doc.data.repository.manage.entity.ApiCustomParams;
 import com.zyplayer.doc.data.service.manage.ApiCustomNodeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -28,6 +25,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/doc-api/proxy")
 public class ApiPoxyRequestController {
 	private static final Logger logger = LoggerFactory.getLogger(ApiPoxyRequestController.class);

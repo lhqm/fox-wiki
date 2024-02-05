@@ -21,6 +21,7 @@ import com.zyplayer.doc.db.framework.consts.DbAuthType;
 import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -37,6 +38,7 @@ import java.util.stream.Stream;
  * @since 2023年8月18日
  */
 @RestController
+@CrossOrigin
 @AuthMan(DocAuthConst.DB_DATASOURCE_MANAGE)
 @RequestMapping("/zyplayer-doc-db/auth")
 public class DbDataSourceAuthController {

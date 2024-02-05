@@ -24,6 +24,7 @@ import com.zyplayer.doc.manage.web.vo.UserInfoAuthVo;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.DigestUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -40,6 +41,7 @@ import java.util.stream.Collectors;
  * @since 2023-12-08
  */
 @RestController
+@CrossOrigin
 @RequestMapping("/user/info")
 public class UserInfoController {
 	

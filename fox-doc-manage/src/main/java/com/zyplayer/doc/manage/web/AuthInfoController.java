@@ -8,6 +8,7 @@ import com.zyplayer.doc.data.config.security.DocUserUtil;
 import com.zyplayer.doc.data.repository.manage.entity.AuthInfo;
 import com.zyplayer.doc.data.repository.support.consts.DocAuthConst;
 import com.zyplayer.doc.data.service.manage.AuthInfoService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,6 +24,7 @@ import java.util.List;
  * @since 2023-12-08
  */
 @RestController
+@CrossOrigin
 @RequestMapping("/auth/info")
 @AuthMan(DocAuthConst.AUTH_MANAGE)
 public class AuthInfoController {

@@ -6,7 +6,7 @@
 			<div style="line-height: 30px;padding: 10px 0;">
 				<div style="margin-bottom: 30px;">专注于私有化部署的在线知识库管理平台</div>
 				<div>当前版本 {{upgradeInfo.nowVersion || '1.0.0'}}</div>
-				<div>版权所有 © 2023-2023 <a target="_blank" href="https://doc.zyplayer.com">doc.zyplayer.com</a></div>
+				<div>版权所有 © 2023-2023 <a target="_blank" href="https://doc.127.0.0.1:8083">doc.127.0.0.1:8083</a></div>
 			</div>
 		</div>
 	</el-dialog>

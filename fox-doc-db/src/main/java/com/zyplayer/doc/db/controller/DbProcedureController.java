@@ -22,6 +22,7 @@ import com.zyplayer.doc.db.service.database.DbBaseService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -38,6 +39,7 @@ import java.util.List;
  */
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-db/procedure")
 public class DbProcedureController {
 	private static final Logger logger = LoggerFactory.getLogger(DbProcedureController.class);

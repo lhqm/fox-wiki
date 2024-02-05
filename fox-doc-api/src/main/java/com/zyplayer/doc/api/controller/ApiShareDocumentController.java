@@ -8,10 +8,7 @@ import com.zyplayer.doc.data.repository.manage.entity.ApiDoc;
 import com.zyplayer.doc.data.service.manage.ApiDocService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -25,6 +22,7 @@ import java.util.Objects;
  * @since 2023年10月16日
  */
 @RestController
+@CrossOrigin
 @RequestMapping("/doc-api/share")
 public class ApiShareDocumentController {
 	private static final Logger logger = LoggerFactory.getLogger(ApiShareDocumentController.class);

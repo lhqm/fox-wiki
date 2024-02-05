@@ -25,6 +25,7 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -41,6 +42,7 @@ import java.util.*;
  */
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-db/data-view")
 public class DbDataViewController {
 	private static final Logger logger = LoggerFactory.getLogger(DbDataViewController.class);

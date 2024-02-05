@@ -22,14 +22,10 @@ import com.zyplayer.doc.wiki.framework.consts.Const;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URLEncoder;
@@ -44,6 +40,7 @@ import java.util.Optional;
  */
 @Slf4j
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-wiki/common")
 @RequiredArgsConstructor
 public class WikiCommonController {

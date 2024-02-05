@@ -4,10 +4,7 @@ import com.zyplayer.doc.core.json.DocResponseJson;
 import com.zyplayer.doc.core.json.ResponseJson;
 import com.zyplayer.doc.manage.framework.config.ZyplayerModuleKeeper;
 import com.zyplayer.doc.manage.framework.upgrade.UpgradeUtil;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -19,6 +16,7 @@ import javax.annotation.Resource;
  * @since 2019-04-21
  */
 @RestController
+@CrossOrigin
 @RequestMapping("/system/info")
 public class SystemInfoController {
 

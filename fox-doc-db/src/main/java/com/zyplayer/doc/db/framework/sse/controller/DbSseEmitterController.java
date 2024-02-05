@@ -16,6 +16,7 @@ import java.util.function.Consumer;
  **/
 @AuthMan
 @RestController
+@CrossOrigin
 @RequestMapping("/zyplayer-doc-db/doc-db")
 public class DbSseEmitterController {
 
